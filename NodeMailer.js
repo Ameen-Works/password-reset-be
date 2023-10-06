@@ -23,7 +23,7 @@ const sendPasswordResetEmail = (email, token) => {
     from: "ameen.desk@gmail.com",
     to: email,
     subject: "Password Reset",
-    text: `Click the following link to reset your password: http://localhost:3001/password-reset/${token}`,
+    text: `Click the following link to reset your password: https://website-login-aw.netlify.app/${token}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
